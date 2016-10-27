@@ -6,5 +6,6 @@ public class HelloWorld {
 		// TODO Auto-generated method stub
 		System.out.println("Hello world");
 		// ovo je neka izmena
+		// ovo je jos jedna izmena 
 	}
 }
