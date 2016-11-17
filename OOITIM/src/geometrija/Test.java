@@ -24,6 +24,18 @@ public class Test {
 		//y koordinate krajnje tacke linije l1
 		l1.gettPocetna().setX(l1.gettKrajnja().getY());
 		System.out.println("X pocetne tacke l1: "+l1.gettPocetna().getX());
+		System.out.println("Duzina l1: "+l1.duzina());
+		Pravougaonik p1 = new Pravougaonik();
+		p1.setGoreLevo(t1);
+		// x koordinatu tacke gore levo p1
+		System.out.println("X gore levo p1: "+p1.getGoreLevo().getX());
+		Kvadrat kv1 = new Kvadrat();
+		kv1.setGoreLevo(t2);
+		kv1.setDuzinaStranice(100);
+		//y koordinata tacke gore levo p1 na vrednost 
+		//zbira obima i povrsine kv1
+		p1.getGoreLevo().setY(kv1.obim()+kv1.povrsina());
+		System.out.println("Y gore levo p1: "+p1.getGoreLevo().getY());
 	}
 
 }

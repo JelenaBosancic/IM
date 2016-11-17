@@ -10,7 +10,12 @@ public class Linija {
 		tKrajnja.setX(tKrajnja.getX()+poX);
 		tKrajnja.setY(tKrajnja.getY()+poY);
 	}
-	
+	public double duzina(){
+		int dx = tPocetna.getX() - tKrajnja.getX();
+		int dy = tPocetna.getY() - tKrajnja.getY();
+		double d = Math.sqrt(dx * dx + dy * dy);
+		return d;
+	}
 	public Tacka gettPocetna(){
 		return tPocetna;
 	}
