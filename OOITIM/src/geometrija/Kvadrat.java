@@ -4,6 +4,13 @@ public class Kvadrat {
 	private Tacka goreLevo;
 	private int duzinaStranice;
 	
+	public Kvadrat(){
+
+	}
+	public Kvadrat(Tacka goreLevo, int duzinaStranice){
+		this.goreLevo = goreLevo;
+		this.duzinaStranice = duzinaStranice;
+	}
 	public void pomeriNa(int x, int y){
 		goreLevo.pomeriNa(x, y);
 	}
@@ -28,6 +35,6 @@ public class Kvadrat {
 	public void setDuzinaStranice(int duzinaStranice) {
 		this.duzinaStranice = duzinaStranice;
 	}
-	
-	
+
+
 }

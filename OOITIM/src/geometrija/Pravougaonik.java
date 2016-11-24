@@ -4,7 +4,15 @@ public class Pravougaonik {
 	private Tacka goreLevo;
 	private int sirina;
 	private int visina;
-	
+
+	public Pravougaonik(){
+
+	}
+	public Pravougaonik(Tacka goreLevo, int sirina, int visina){
+		this.goreLevo=goreLevo;
+		this.sirina=sirina;
+		this.visina=visina;	
+	}
 	public void pomeriNa(int x, int y){
 		goreLevo.setX(x);
 		goreLevo.setY(y);
@@ -38,6 +46,6 @@ public class Pravougaonik {
 	public void setSirina(int sirina){
 		this.sirina = sirina;
 	}
-	
-	
+
+
 }

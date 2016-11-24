@@ -4,6 +4,13 @@ public class Linija {
 	private Tacka tPocetna;
 	private Tacka tKrajnja;
 	
+	public Linija(){
+		
+	}
+	public Linija(Tacka tPocetna, Tacka tKrajnja){
+		this.tPocetna = tPocetna;
+		this.tKrajnja = tKrajnja;
+	}
 	public void pomeriZa(int poX, int poY){
 		tPocetna.setX(tPocetna.getX()+poX);
 		tPocetna.setY(tPocetna.getY()+poY);
